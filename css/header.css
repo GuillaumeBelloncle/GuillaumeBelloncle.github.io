@@ -1,13 +1,19 @@
 header {
     /*barre rouge en haut de la page*/
-    background-color: var(--BleuFoncerKoala);
+    background-color: var(--VertFoncer);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    color: var(--VertKoala)
+    color: var(--Marron)
 }
+
+header a {
+    color: var(--Beige)
+}
+
+
 
 nav {
     /*le contenu de la barre rouge,centré*/

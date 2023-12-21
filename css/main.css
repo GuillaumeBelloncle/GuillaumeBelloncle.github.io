@@ -34,7 +34,18 @@ body {
 }
 
 a {
-  color: var(--BleuFoncerKoala);
+  color: var(--Beige);
+}
+
+h1 {
+  color: var(--VertFoncer);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--Marron);
+  font-size: 1.25rem;
 }
 
 h3,
@@ -44,28 +55,16 @@ h6 {
   color: #000000;
 }
 
+p {
+  margin: 0px;
+  text-align: justify;
+}
+
 hr {
   border: none;
-  /* Supprimer la bordure par défaut */
   height: 2px;
-  /* Épaisseur de la ligne horizontale */
-  background-color: var(--JaunePalePS);
-  /* Couleur de la ligne (rouge dans cet exemple) */
+  background-color: var(--VertFoncer);
   margin: 10px 0;
-  /* Marge supérieure et inférieure pour l'espacement */
-}
-
-.content-section {
-  background: var(--VertBleuPS);
-  color: var(--JaunePalePS);
-  padding: 10px 5px;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
-
-.content-section a {
-  color: var(--JaunePalePS);
 }
 
 .centered-content {
@@ -75,10 +74,7 @@ hr {
   height: 100%;
 }
 
-p {
-  margin: 0px;
-  text-align: justify;
-}
+
 
 button {
   background-color: var(--GrisClair);
@@ -89,17 +85,6 @@ button {
 
 .toggle-box-button {
   cursor: pointer;
-}
-
-h1 {
-  color: var(--VertBleuPS);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-h2 {
-  color: var(--BleuPS);
-  font-size: 1.25rem;
 }
 
 @media screen and (max-width:700px) {
@@ -132,35 +117,6 @@ h2 {
   }
 }
 
-.CelluleCalendrier,
-i.CelluleCalendrier {
-  text-align: center;
-  display: block;
-  font-size: 0.8rem;
-}
-
-.GrilleCalendrier {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-rows: minmax(1rem, auto);
-  border: solid 1px var(--GrisClair);
-}
-
-.GrilleCalendrier>div {
-  border: solid 1px var(--GrisClair);
-
-  padding: 0.1em;
-}
-
-hr.Calendrier {
-  border: none;
-  /* Supprimer la bordure par défaut */
-  height: 1px;
-  /* Épaisseur de la ligne horizontale */
-  background-color: var(--JaunePalePS);
-  /* Couleur de la ligne (rouge dans cet exemple) */
-}
-
 .logo {
   height: 6rem;
   margin: 5px;
@@ -180,23 +136,6 @@ hr.Calendrier {
   height: 1rem;
 }
 
-
-.GrilleUsers {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(1rem, auto);
-}
-
-.GrilleUsers>div {
-  margin: 0.5em;
-}
-
-.event {
-  border: 1px solid var(--GrisClair);
-  border-radius: 15px;
-  margin-bottom: 10px;
-  color: #000000;
-}
 
 .rowDrive {
   display: flex;
@@ -280,13 +219,4 @@ a button {
   color: var(--Beige);
   justify-content: center;
   width: 100%;
-}
-
-
-.rdvMc strong {
-  text-decoration: solid;
-}
-
-.rdvMc i {
-  color: var(--VertBleuPS);
 }
